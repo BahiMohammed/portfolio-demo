@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملفي الشخصي</title> 
+    <link rel="stylesheet" href="style_rtl.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar">
+        <div class="logo">جون دو</div>
+        <ul class="nav-links">
+            <li><a href="#about">من أنا</a></li>
+            <li><a href="#experience">الخبرة</a></li>
+            <li><a href="#projects">المشاريع</a></li>
+            <li><a href="#contact">اتصل بي</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">جون دو</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">من أنا</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">الخبرة</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">المشاريع</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">اتصل بي</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile" class="fade-in">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="صورة جون دو"/>
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">مرحبًا، أنا</p>
+            <h1 class="title">جون دو</h1>
+            <p class="section_text_p2">مطور الواجهة الأمامية</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">تحميل السيرة الذاتية</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">معلومات الاتصال</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="لينكد إن" class="icon" onclick="location.href='http://www.linkedin.com'"/>
+                <img src="./assets/github.png" alt="جيت هاب" class="icon" onclick="location.href='http://github.com'"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <p class="section_text_p1">تعرف علي أكثر</p>
+        <h1 class="title">من أنا</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about-pic.png" alt="صورة شخصية" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="أيقونة الخبرة" class="icon"/>
+                        <h3>الخبرة</h3>
+                        <p>3+ سنوات <br> مطور الواجهة الأمامية</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="أيقونة التعليم" class="icon"/>
+                        <h3>التعليم</h3>
+                        <p>بكالوريوس علوم <br>ماجستير علوم</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>أنا مطور ويب متخصص في بناء واجهات احترافية وتجربة مستخدم سلسة، مع خبرة في HTML، CSS، و JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="fade-in">
+        <p class="section_text_p1">استكشف</p>
+        <h1 class="title">خبرتي</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">مطور الواجهة الأمامية</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="خبرة" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>خبير</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="خبرة" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>خبير</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="خبرة" class="icon"/>
+                            <div>
+                                <h3>SASS</h3>
+                                <p>متوسط</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="خبرة" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>مبتدئ</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="خبرة" class="icon"/>
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>مبتدئ</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">مطور الواجهة الخلفية</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="خبرة" class="icon"/>
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>متوسط</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="خبرة" class="icon"/>
+                            <div>
+                                <h3>Express.js</h3>
+                                <p>خبير</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="خبرة" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>متوسط</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project Section -->
+    <section id="projects" class="fade-in">
+        <p class="section_text_p1">ألقِ نظرة على</p>
+        <h1 class="title">مشاريعي</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="المشروع الأول" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">المشروع الأول</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">عرض مباشر</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="المشروع الثاني" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">المشروع الثاني</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">عرض مباشر</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="المشروع الثالث" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">المشروع الثالث</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">عرض مباشر</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <p class="section_text_p1">تواصل معي</p>
+        <h1 class="title">اتصل بي</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="أيقونة البريد الإلكتروني" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:examplemail@gmail.com">example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="أيقونة لينكد إن" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <div id="scrollArrow">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"/>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                    <ul class="nav-links">
+                    <li><a href="#about">من أنا</a></li>
+                    <li><a href="#experience">الخبرة</a></li>
+                    <li><a href="#projects">المشاريع</a></li>
+                    <li><a href="#contact">اتصل بي</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>حقوق النشر &#169; 2025 جون دو. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
